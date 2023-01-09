@@ -32,6 +32,12 @@ public class EventoController : ControllerBase
         return _evento;
     }
 
+    [HttpGet("{id}")]
+    public IEnumerable<Evento> GetByID(int id)
+    {
+        return _evento.Where(e => e.EventoID == id);
+    }
+
     [HttpDelete("{id}")]
     public string Delete(int id){
         return "Deletado!";

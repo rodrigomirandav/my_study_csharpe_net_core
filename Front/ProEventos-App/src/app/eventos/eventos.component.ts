@@ -1,0 +1,28 @@
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { NO_ERRORS_SCHEMA } from '@angular/compiler';
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-eventos',
+  templateUrl: './eventos.component.html',
+  styleUrls: ['./eventos.component.scss']
+})
+export class EventosComponent {
+
+  public eventos: any;
+
+  constructor(private http: HttpClient) {
+
+  }
+
+  ngOnInit(): void {
+    this.getEventos()
+  }
+
+  public getEventos(): void{
+    this.http.get('https://localhost:7138/api/eventos').subscribe(
+      response => this.eventos = response,
+      erro => console.error()
+    )
+  }
+}

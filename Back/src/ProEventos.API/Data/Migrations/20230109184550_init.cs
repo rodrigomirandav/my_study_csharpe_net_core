@@ -14,12 +14,12 @@ namespace ProEventos.API.Data.Migrations
                 {
                     EventoID = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Local = table.Column<string>(type: "TEXT", nullable: true),
-                    DataEvento = table.Column<string>(type: "TEXT", nullable: true),
-                    Tema = table.Column<string>(type: "TEXT", nullable: true),
+                    Local = table.Column<string>(type: "TEXT", nullable: false),
+                    DataEvento = table.Column<string>(type: "TEXT", nullable: false),
+                    Tema = table.Column<string>(type: "TEXT", nullable: false),
                     QtdPessoas = table.Column<int>(type: "INTEGER", nullable: false),
-                    Lote = table.Column<string>(type: "TEXT", nullable: true),
-                    ImagemURL = table.Column<string>(type: "TEXT", nullable: true)
+                    Lote = table.Column<string>(type: "TEXT", nullable: false),
+                    ImagemURL = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

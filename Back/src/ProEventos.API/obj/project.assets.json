@@ -2,6 +2,35 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "AutoMapper/12.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "12.0.0",
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -748,6 +777,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
           "ProEventos.Domain": "1.0.0",
           "ProEventos.Persistence": "1.0.0"
         },
@@ -786,6 +816,35 @@
     }
   },
   "libraries": {
+    "AutoMapper/12.0.0": {
+      "sha512": "0Rmg0zI5AFu1O/y//o9VGyhxKjhggWpk9mOA1tp0DEVx40c61bs+lnQv+0jUq8XbniF7FKgIVvI1perqiMtLrA==",
+      "type": "package",
+      "path": "automapper/12.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.12.0.0.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.dll",
+        "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.0": {
+      "sha512": "XCJ4E3oKrbRl1qY9Mr+7uyC0xZj1+bqQjmQRWTiTKiVuuXTny+7YFWHi20tPjwkMukLbicN6yGlDy5PZ4wyi1w==",
+      "type": "package",
+      "path": "automapper.extensions.microsoft.dependencyinjection/12.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+        "automapper.extensions.microsoft.dependencyinjection.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -1783,11 +1842,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "f:\\CSharp\\my_study_csharpe_net_core\\Back\\src\\ProEventos.API\\ProEventos.API.csproj",
+      "projectUniqueName": "F:\\CSharp\\my_study_csharpe_net_core\\Back\\src\\ProEventos.API\\ProEventos.API.csproj",
       "projectName": "ProEventos.API",
-      "projectPath": "f:\\CSharp\\my_study_csharpe_net_core\\Back\\src\\ProEventos.API\\ProEventos.API.csproj",
+      "projectPath": "F:\\CSharp\\my_study_csharpe_net_core\\Back\\src\\ProEventos.API\\ProEventos.API.csproj",
       "packagesPath": "C:\\Users\\digui\\.nuget\\packages\\",
-      "outputPath": "f:\\CSharp\\my_study_csharpe_net_core\\Back\\src\\ProEventos.API\\obj\\",
+      "outputPath": "F:\\CSharp\\my_study_csharpe_net_core\\Back\\src\\ProEventos.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1800,14 +1859,15 @@
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "f:\\CSharp\\my_study_csharpe_net_core\\Back\\src\\ProEventos.Application\\ProEventos.Application.csproj": {
-              "projectPath": "f:\\CSharp\\my_study_csharpe_net_core\\Back\\src\\ProEventos.Application\\ProEventos.Application.csproj"
+            "F:\\CSharp\\my_study_csharpe_net_core\\Back\\src\\ProEventos.Application\\ProEventos.Application.csproj": {
+              "projectPath": "F:\\CSharp\\my_study_csharpe_net_core\\Back\\src\\ProEventos.Application\\ProEventos.Application.csproj"
             }
           }
         }
@@ -1878,7 +1938,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

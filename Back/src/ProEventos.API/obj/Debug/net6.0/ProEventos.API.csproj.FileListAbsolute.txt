@@ -70,3 +70,5 @@ F:\CSharp\my_study_csharpe_net_core\Back\src\ProEventos.API\bin\Debug\net6.0\Mic
 F:\CSharp\my_study_csharpe_net_core\Back\src\ProEventos.API\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 F:\CSharp\my_study_csharpe_net_core\Back\src\ProEventos.API\bin\Debug\net6.0\Newtonsoft.Json.dll
 F:\CSharp\my_study_csharpe_net_core\Back\src\ProEventos.API\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+F:\CSharp\my_study_csharpe_net_core\Back\src\ProEventos.API\bin\Debug\net6.0\AutoMapper.dll
+F:\CSharp\my_study_csharpe_net_core\Back\src\ProEventos.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
